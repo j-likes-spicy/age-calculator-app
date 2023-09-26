@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app | Completed by j-likes-spicy</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <div class="form-items">
+          <div class="label-container">
+            <label for="day">DAY</label>
+            <input
+              type="text"
+              maxlength="2"
+              placeholder="DD"
+              id="day"
+              name="day"
+              size="2"
+            />
+            <p class="error--caption" aria-live="polite" id="dayerror"></p>
+          </div>
+
+          <div class="label-container">
+            <label for="month">MONTH</label>
+            <input
+              type="text"
+              maxlength="2"
+              placeholder="MM"
+              id="month"
+              name="month"
+              size="2"
+            />
+            <p class="error--caption" aria-live="polite" id="montherror"></p>
+          </div>
+
+          <div class="label-container">
+            <label for="year">YEAR</label>
+            <input
+              type="text"
+              maxlength="4"
+              placeholder="YYYY"
+              id="year"
+              name="year"
+              size="4"
+            />
+            <p class="error--caption" aria-live="polite" id="yearerror"></p>
+          </div>
+        </div>
+        <div class="controlsection">
+          <hr />
+          <button class="arrow" id="firebutton">
+            <img
+              src="../assets/images/icon-arrow.svg"
+              class="arrow--graphic"
+              alt="arrow icon"
+            />
+          </button>
+        </div>
+      </form>
+      <div class="output">
+        <p class="output--text" >
+          <span class="outputcolor" id="output--years">--</span> years
+        </p>
+        <p class="output--text" >
+          <span class="outputcolor" id="output--months">--</span> months
+        </p>
+        <p class="output--text" ">
+          <span class="outputcolor" id="output--days">--</span> days
+        </p>
+      </div>
+  
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">j.likes.spicy</a>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

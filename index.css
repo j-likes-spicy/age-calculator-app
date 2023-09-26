@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+::root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: lightgrey;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="text"] {
+  font-size: 2em;
+  font-family: inherit;
+  border-radius: 0.5em;
+  border: 0.5px solid lightgray;
+  padding: 12px 24px;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  background: blue;
+  width: 6em;
+  height: 6em;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.arrow:hover {
+  background: black;
+  cursor: pointer;
+}
+
+.arrow--graphic {
+  height: 2.75em;
+  width: 2.75em;
+}
+
+.container {
+  margin: 9.625em auto;
+  padding: 3.5em;
+  background: white;
+  border-radius: 1.5em;
+  border-bottom-right-radius: 12.5em;
+}
+
+.controlsection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 6em;
+}
+
+.dividergraphic {
+  border: 1px dotted gray;
+  margin: 0 auto 0 auto;
+}
+
+.error--caption {
+  color: red;
+  font-size: 0.875em;
+  font-style: italic;
+}
+
+hr {
+  align-self: center;
+  border: 1px dotted lightgray;
+  flex: 1 1;
+}
+
+.form-items {
+  display: flex;
+  align-items: flex-start;
+}
+
+label {
+  color: grey;
+  font-size: 0.875em;
+  letter-spacing: 0.25em;
+  font-weight: 400;
+  margin: 0 0 0.5em 0;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2em 0 0;
+  width: 10em;
+}
+
+.outputcolor {
+  color: blue;
+}
+
+.output--text {
+  font-size: 104px;
+  margin: -0.5em 0;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries*/
+/* Desktop view */
+@media screen and (min-width: 50em) {
+  .container {
+    width: 52.5em;
+    height: 40.6875em;
+  }
+}
+
+/* Mobile view */
+@media screen and (max-width: 23.4375em) {
+  .container {
+    width: 21.4375em;
+    margin: 1em auto;
+    padding: 3em 1.5em;
+    margin: 5.5em 1em;
+    border-bottom-right-radius: 6.25em;
+  }
+
+  .arrow {
+    position: absolute;
+    left: 50;
+  }
+
+  .controlsection {
+    justify-content: center;
+    margin: 0 0 2em 0;
+  }
+
+  .output--text {
+    font-size: 2.5em;
+  }
+
+  label {
+    font-size: 0.75em;
+  }
+
+  .label-container {
+    margin: 0 1em 0 0;
+    min-width: 5.48em;
+  }
+
+  .form-items {
+    align-items: center;
+    margin: 0 0 2em 0;
+  }
+
+  input[type="text"] {
+    font-size: 1.25em;
+    padding: 0.75em 1em;
+  }
+}
